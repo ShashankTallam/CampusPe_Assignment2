@@ -2,13 +2,15 @@ import os
 from groq import Groq
 from dotenv import load_dotenv
 
+load_dotenv()
+
+
 def query_groq(prompt):
     """Sends a prompt to Groq and returns the generated response."""
-    load_dotenv()
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         return "Error: GROQ_API_KEY environment variable not set."
-    
+
     try:
         client = Groq(api_key=api_key)
         chat_completion = client.chat.completions.create(
@@ -20,6 +22,7 @@ def query_groq(prompt):
         return chat_completion.choices[0].message.content.strip()
     except Exception as e:
         return f"An error occurred: {e}"
+
 
 if __name__ == "__main__":
     user_prompt = input("Enter your prompt for Groq: ")
