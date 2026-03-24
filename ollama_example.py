@@ -12,7 +12,7 @@ def query_ollama(prompt, model="llama3"):
     }
 
     try:
-        response = requests.post(url, json=payload, timeout=120)
+        response = requests.post(url, json=payload)
 
         if response.status_code == 404:
             error_data = response.json()
