@@ -1,6 +1,6 @@
 # AI API Integration Assignment
 
-Hey there! 👋 I'm Veeresh H P, and this is my submission for the AI API Integration college assignment. 
+Hey there! 👋 I'm Shashank, and this is my submission for the AI API Integration college assignment. 
 
 For this project, I wanted to explore how we can connect to different AI models using Python. Instead of just sticking to one, I decided to build integrations for five different providers, including both local and cloud-based options. It was a really fun challenge to figure out how each API differs and how to bring them all together.
 
